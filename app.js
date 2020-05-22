@@ -90,7 +90,7 @@ function deleteCheck(e) {
   else if (item.classList[0] === 'edit-btn'){
     const todo = item.parentElement;
     editedInput = prompt("Edit this item...");
-    todo.innerText = editedInput;
+    todo.children[0].innerText = editedInput;
     console.log(todo);
   }
 }
